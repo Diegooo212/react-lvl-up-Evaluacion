@@ -6,7 +6,6 @@
   text-align: center;
 }
 
-/* IMPORTANTE: El mapa debe tener una altura definida para mostrarse */
 .map-container {
   height: 500px;
   width: 100%;
@@ -14,15 +13,11 @@
   box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
   border: 2px solid #45a29e;
   margin-top: 20px;
-  /* Color de fondo mientras cargan las imágenes del mapa */
   background-color: #0b0c10; 
-  /* Asegura que el borde redondeado recorte el mapa */
   overflow: hidden;
 }
 
-/* --- Estilos para adaptar los Popups de Leaflet a tu tema oscuro --- */
 
-/* Fondo y borde del popup */
 .leaflet-popup-content-wrapper {
   background-color: #1f2833 !important;
   color: #c5c6c7 !important;
@@ -30,19 +25,16 @@
   border-radius: 8px !important;
 }
 
-/* Título del popup */
 .leaflet-popup-content h3 {
   color: #00ffea !important;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-/* Flecha del popup */
 .leaflet-popup-tip {
   background-color: #1f2833 !important;
 }
 
-/* Botón de cerrar (X) */
 .leaflet-popup-close-button {
   color: #c5c6c7 !important;
   padding: 8px 8px 0 0 !important;

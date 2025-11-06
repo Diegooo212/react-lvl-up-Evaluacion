@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-header {
+/*header {
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
     padding: 20px;
     text-align: center;
@@ -18,8 +18,9 @@ header h1 {
     font-size: 2.5rem;
     text-shadow: 0 0 10px #45a29e, 0 0 20px #45a29e;
 }
+    */
 
-nav {
+/*nav {
     margin-top: 15px;
 }
 
@@ -35,6 +36,7 @@ nav a:hover {
     color: #66fcf1;
     text-shadow: 0 0 10px #66fcf1;
 }
+    */
 
 main {
     padding: 50px;
@@ -498,7 +500,7 @@ header { position: relative; }
   background: #66fcf1;
   box-shadow: 0 0 15px #66fcf1;
 }
-nav {
+/*nav {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -516,6 +518,7 @@ nav a {
 nav a:hover {
   background: #333;
 }
+  */
 
 .admin-link {
   background: #ff4500;
@@ -576,7 +579,7 @@ nav a:hover {
 
 /* carrito decoracion derecha interfaz*/
 
-header {
+/*header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -589,12 +592,14 @@ nav {
   display: flex;
   gap: 20px;
 }
+  
 
 .header-right {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+  */
 
 .carrito-btn {
   background-color: #00bcd4;
@@ -746,4 +751,49 @@ body {
 .descuento-verde {
   color: #00ffea; /* Tu color de acento cian */
   font-weight: bold;
+}
+
+/* ======================================== */
+/* --- MEJORAS DE RESPONSIVIDAD MÓVIL --- */
+/* ======================================== */
+
+/* Esto se aplica a pantallas de 768px o menos (tablets y móviles) */
+@media (max-width: 768px) {
+
+  /* 1. Hacemos los títulos más pequeños en móvil */
+  h1, .h1 {
+    font-size: 2.1rem; /* Un poco más pequeño que el H1 de desktop */
+  }
+
+  h2, .h2 {
+    font-size: 1.8rem;
+    /* Reducimos el margen inferior que Bootstrap les da por defecto */
+    margin-bottom: 0.75rem; 
+  }
+
+  h3, .h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* 2. Reducimos el espaciado (padding) general de las páginas */
+  /* (Tu <main> en App.tsx tenía padding: '20px 0') */
+  main {
+    padding: 15px 0 !important; /* Menos padding arriba/abajo en móvil */
+  }
+
+  /* 3. Reducimos el padding de los contenedores de Bootstrap */
+  .container-fluid, .container {
+    /* Menos padding a los lados en móvil */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* 4. Hacemos que los botones de filtros sean de ancho completo */
+  .btn-outline-info {
+    /* Esto es para tu botón "Filtrar Productos" */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  
 }

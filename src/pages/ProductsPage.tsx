@@ -13,7 +13,7 @@ const ProductsPage: React.FC = () => {
             <h2 className="text-center" style={{ color: '#66fcf1', marginBottom: '10px' }}> 
                 Explora Nuestras Categorías
             </h2>
-            <p style={{ textAlign: 'center', marginBottom: '30px' }}>
+            <p style={{ textAlign: 'center', marginBottom: '30px',color: '#66fcf1' }}>
                 Selecciona una categoría y descubre los mejores productos gamer.
             </p>
             

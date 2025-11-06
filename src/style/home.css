@@ -2,9 +2,8 @@
 
 /* --- Estilos para la Sección Hero --- */
 .hero-section {
-  /* Si usas imagen de fondo: */
-  /* background: url('URL_DE_TU_IMAGEN.jpg') center/cover no-repeat; */
-  background-color: #1a1a33; /* Fondo alternativo */
+ 
+  background-color: #1a1a33;
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -12,7 +11,6 @@
   overflow: hidden;
 }
 
-/* Opcional: Overlay oscuro sobre la imagen de fondo */
 
 .hero-section::after {
   content: "";
@@ -50,7 +48,7 @@
 }
 
 .hero-button {
-  background: #00ffea !important; /* !important para sobreescribir Bootstrap */
+  background: #00ffea !important; 
   color: #0d0d1a !important;
   padding: 12px 28px !important;
   border-radius: 30px !important;
@@ -64,7 +62,7 @@
   box-shadow: 0px 0px 15px #00ffea;
 }
 
-/* --- Estilos para Secciones (Categorías y Destacados) --- */
+
 .home-section {
   padding: 50px 0;
 }
@@ -189,7 +187,7 @@
   padding: 10px 14px !important;
   font-weight: 700 !important;
   width: 100%;
-  margin-top: auto; /* Se pega abajo */
+  margin-top: auto; 
   transition: transform .15s ease, box-shadow .2s ease;
 }
 .buy-button:hover {

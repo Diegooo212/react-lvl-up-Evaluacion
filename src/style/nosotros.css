@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 60vh; /* Asegura que ocupe algo de espacio */
+  min-height: 60vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,16 +22,15 @@
 }
 
 .nosotros-card {
-  /* Estilo de la tarjeta principal de contenido */
   background: rgba(20, 20, 40, 0.9);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 255, 234, 0.3);
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.1rem; /* Un poco más legible */
+  font-size: 1.1rem; 
   line-height: 1.7;
-  text-align: left; /* Mejor para párrafos largos */
+  text-align: left; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #efefef;
 }
@@ -42,10 +41,9 @@
 }
 
 .nosotros-card p {
-  margin-bottom: 1rem; /* Espacio entre párrafos */
+  margin-bottom: 1rem; 
 }
 
-/* Animación de luces de fondo (opcional, como la tenías) */
 .nosotros-section::before {
   content: "";
   position: absolute;

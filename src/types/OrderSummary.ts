@@ -3,43 +3,42 @@ import { CartItem } from './CartItem';
 
 // Define la estructura para la información del usuario en el resumen
 interface OrderUserSummary {
-  email?: string; // Email es opcional si currentUser puede ser null inicialmente
+  email?: string; 
   firstName?: string;
   lastName?: string;
   role?: 'user' | 'admin';
-  // Añade otros campos si los recopilas
+  
 }
 
 // Define la estructura para la dirección de envío en el resumen
 interface OrderShippingAddress {
   street: string;
-  department?: string; // Opcional
-  regionId: string; // Guardamos el ID, podrías querer guardar el nombre también
+  department?: string; 
+  regionId: string; 
   comunaId: string;
-  indications?: string; // Opcional
+  indications?: string;
 }
 
-// Define la estructura para la info de pago (solo datos seguros)
+// Define la estructura para la info de pago 
 interface OrderPaymentInfo {
-    cardNumberLast4: string; // Solo los últimos 4 dígitos
+    cardNumberLast4: string; 
 }
 
-// Interfaz principal para el resumen del pedido
 export interface OrderSummary {
-  user: OrderUserSummary | null; // Puede ser null si algo falla
+  user: OrderUserSummary | null; 
   shippingAddress: OrderShippingAddress;
   paymentInfo: OrderPaymentInfo;
   items: CartItem[];
   subtotal: number;
   discount: number;
   total: number;
-  orderDate: string; // Fecha formateada
-  orderId: string; // ID simulado del pedido
+  orderDate: string; 
+  orderId: string; 
 }
-interface OrderSummaryItem { // O la interfaz que uses para los items dentro de OrderSummary
+interface OrderSummaryItem { 
   id: string;
   name: string;
-  price: number; // Precio unitario en el momento de la compra
-  img: string; // <<<--- ASEGÚRATE DE QUE ESTÉ
+  price: number; 
+  img: string; 
   cantidad: number;
 }

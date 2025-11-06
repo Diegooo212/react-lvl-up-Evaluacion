@@ -8,11 +8,11 @@ export type UserStatus = 'Activo' | 'Suspendido';
 
 // 3. Definimos la estructura del usuario para el panel de admin
 export interface AdminUser {
-  id: string; // ID único
+  id: string; 
   firstName: string;
   lastName: string;
   email: string;
   role: UserRole;
-  dateJoined: string; // Fecha de registro (como string)
+  dateJoined: string; 
   status: UserStatus;
 }

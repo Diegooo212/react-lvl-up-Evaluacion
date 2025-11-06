@@ -16,8 +16,12 @@ const HomePage: React.FC = () => {
     return (
         <div>
             <HeroSection />
-            <CategorySection />
-            <FeaturedSection />
+            <div className="my-3 my-md-5">
+                <CategorySection />
+            </div>
+            <div className="my-3 my-md-5">
+                <FeaturedSection />
+            </div>
         </div>
     );
 };
